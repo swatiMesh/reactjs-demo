@@ -1,0 +1,75 @@
+.App-header {
+  /* background-color: #150773; */
+  background-color: #d4d4d4;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #ffff;
+  z-index: 99;
+  margin: 0px !important;
+  padding: 10px;
+}
+
+.self-align-center {
+  align-self: center;
+}
+
+.sidebar {
+  margin: 0px !important;
+  padding: 4%;
+}
+
+.activeLink .sidebar {
+  color: white;
+  background-color: #150773;
+}
+
+a {
+  text-decoration: none !important;
+  color: #150773 !important;
+}
+
+/* .sidebar>.activeLink {
+  color: blueviolet;
+} */
+
+/* .activeLink {
+  color: red;
+} */
+
+.fixed-header {
+  position: fixed;
+  width: 100%;
+}
+
+.fade.modal.show {
+  padding-left: 0px !important;
+}
+
+.fade.modal.show .modal-dialog {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fade.modal .modal-dialog {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal-content {
+  height: 100vh;
+}
+
+.textCenter {
+  text-align: center;
+  align-self: center;
+}
+
+.fontLarge {
+  font-size: 20px;
+}
