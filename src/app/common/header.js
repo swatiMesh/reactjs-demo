@@ -53,7 +53,7 @@ class Header extends React.Component {
             <>
                 <Row className="fixed-header App-header self-align-center">
                     <Col md={1} xs={1} sm={1} xl={1} className="text-center">
-                        <img role="button" onClick={this.onClickButton} alt="user" src={'/user.svg'} />
+                        <img role="button" onClick={this.onClickButton} alt="user" src={'/menu_icon.svg'} />
                     </Col>
                     <Col className="self-align-center">
                         <h5 style={styles} className="text-start">Hey Good {timeOfDay} Welcome to ReactJs</h5>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Row, Col } from 'react-bootstrap';
+import { Button, Form, Row, Col, Card } from 'react-bootstrap';
 import Checkboxes from './../views/checkbox';
 import CheckboxData from "./../sampleJson/checkboxList"
 
@@ -50,36 +50,44 @@ class LoginForm extends React.Component {
     render() {
         const todoItems = this.state.todos.map(item => <Checkboxes key={item.id} item={item} handleChecked={this.handleChecked} />)
         return (
-            <div className="ms-3">
-                <h2>Form!</h2>
-                <Form onSubmit={this.handleSubmit}>
-                    <Row className="">
-                        <Col md={4} sm={6} xl={4}>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control value={this.state.email} onChange={this.handleEmailChange} type="email" placeholder="Enter email" />
-                                <Form.Text className="text-muted">
-                                    We'll never share your email with anyone else.
-                        </Form.Text>
-                            </Form.Group></Col>
-                    </Row>
-                    <Row className="">
-                        <Col md={4} sm={6} xl={4}>
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
-                                <Form.Control value={this.state.password} onChange={this.handlePasswrdChange} type="password" placeholder="Password" />
-                            </Form.Group>
-                            {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <div className="ms-3 mt-3">
+                <Row>
+                    <Col></Col><Col>
+                        <h2 className="text-center">Form!</h2>
+                        <Form onSubmit={this.handleSubmit}>
+                            <Row>
+                                <Col>
+                                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control value={this.state.email} onChange={this.handleEmailChange} type="email" placeholder="Enter email" />
+                                        <Form.Text className="text-muted">
+                                            We'll never share your email with anyone else.
+                                        </Form.Text>
+                                    </Form.Group></Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                                        <Form.Label>Password</Form.Label>
+                                        <Form.Control value={this.state.password} onChange={this.handlePasswrdChange} type="password" placeholder="Password" />
+                                    </Form.Group>
+                                    {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                 <Form.Check type="checkbox" checked={this.state.checked}
                                     onChange={this.handleChecked} label="Check me out" />
                             </Form.Group> */}
-                            {todoItems}
-                        </Col>
-                    </Row>
-                    <Button variant="primary" type="submit" value="Submit">
-                        Submit
-                    </Button>
-                </Form>
+                                    {todoItems}
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col></Col><Col>
+                                    <Button variant="primary" type="submit" value="Submit">
+                                        Submit
+                                    </Button>
+                                </Col><Col></Col>
+                            </Row>
+                        </Form>
+                    </Col><Col></Col>
+                </Row>
             </div>
         )
     }
