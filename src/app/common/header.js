@@ -5,7 +5,6 @@ import Home from '../AdminPage/home';
 import About from '../AdminPage/about';
 import Calculate from '../AdminPage/numbers';
 import LoginForm from '../AdminPage/form';
-import LoginPage from '../LoginPage/LoginPage';
 import { Modal, Button, Row, Col } from 'react-bootstrap';
 
 class Header extends React.Component {
