@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col, Card } from 'react-bootstrap';
 
 class About extends React.Component {
     constructor() {
@@ -37,7 +38,22 @@ class About extends React.Component {
     render() {
         return (
             <div className="mt-4">
-                <h2>About!</h2>
+                <Row xs={4} sm={4} md={4} xl={4}>
+                    <Col></Col>
+                    <Col className="mr-1 mb-1" >
+                        <Card bg="info" text="white">
+                            <Card.Header>About</Card.Header>
+                            <Card.Body>
+                                <Card.Title>Swati Meshram</Card.Title>
+                                <Card.Text>Software Developer</Card.Text>
+                                <Card.Text><a href="https://twitter.com/Swati__Meshram" target="_blank" ><img className="m-1" width="12%" src={'/twiiter.png'} />
+                                </a> <a href="https://linkedin.com/in/swati-meshram" target="_blank" ><img className="m-2" width="15%" src={'/linkedin.png'} />
+                                    </a></Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col></Col>
+                </Row>
             </div>
         )
     }

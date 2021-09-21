@@ -3,8 +3,6 @@ import { Modal } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
 function Modals(props) {
-    console.log('yes');
-
     return (
         <Modal show={this.state.openModal}
             onHide={this.onCloseModal} backdrop="static"

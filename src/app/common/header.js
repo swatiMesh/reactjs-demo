@@ -5,6 +5,7 @@ import Home from '../AdminPage/home';
 import About from '../AdminPage/about';
 import Calculate from '../AdminPage/numbers';
 import LoginForm from '../AdminPage/form';
+import LoginPage from '../LoginPage/LoginPage';
 import { Modal, Button, Row, Col } from 'react-bootstrap';
 
 class Header extends React.Component {
@@ -60,11 +61,6 @@ class Header extends React.Component {
 
                     </Col>
                 </Row>
-                {/* <div className="fixed-header App-header">
-                        <h3 style={this.styles} className="text-center"> <span className="padding" role="button">
-                            <img onClick={this.onClickButton} alt="user" src={'/user.svg'} />
-                        </span> Hey Good {timeOfDay} Welcome to ReactJs</h3>
-                    </div> */}
                 <div className="pt-5">
                     <Router>
                         <Switch>
@@ -75,7 +71,7 @@ class Header extends React.Component {
                                     return (
                                         this.state.isUserAuthenticated ?
                                             <Redirect to="/home" /> :
-                                            <Redirect to="/test1" />
+                                            <Redirect to="/login" />
                                     )
                                 }}
                             />
